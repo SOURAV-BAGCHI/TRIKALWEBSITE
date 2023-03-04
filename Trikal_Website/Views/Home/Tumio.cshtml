@@ -1,0 +1,115 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    //Layout = null;
+}
+@*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>*@
+
+<script src="@Url.Content("~/Content/Site/js/Index.js?v="+DateTime.Now.Ticks.ToString())" type="text/javascript"></script>
+
+<style>
+    .hero-header-3 {
+        font-size: 37px;
+        font-weight: 350;
+        color: cadetblue;
+    }
+
+    .text-wrap-left {
+        float: left;
+        margin: 0px;
+        margin-left: -2vw;
+        width: 100vw;
+    }
+
+    .hero-bottom-1 {
+        position: relative;
+        bottom: 60px;
+        font-size: 23px;
+        font-weight: 400;
+        color: #780579d9;
+        z-index: 9;
+        text-align: center;
+    }
+
+    P.drop-cap:first-letter {
+        font-size: 1.5em;
+        /*color: green;*/
+    }
+
+    .tumiofont {
+        font-size: 1.2em;
+    }
+
+    /*@@media (min-width: 768px) and (max-width: 991px) {
+        .text-wrap-left {*/
+            /*margin-left:-2vw;
+        width:100vw;*/
+            /*margin-left: -5vw;
+            width: 490px;
+        }
+    }
+
+    @@media (min-width: 992px) and (max-width: 1199px) {
+        .text-wrap-left {
+            margin-left: -5vw;
+            width: 490px;
+        }
+    }
+
+    @@media (min-width: 1200px) {
+        .text-wrap-left {
+            margin-left: -5vw;
+            width: 490px;
+        }
+    }*/
+
+    li {
+        margin-bottom: 10px;
+    }
+</style>
+
+<a href="@Url.Action("AboutUs")">
+    <div class="sideInfoSection card2" style="display:none;">
+        <strong><span class="vertical-rl">Our</span></strong>
+        <strong><span class="vertical-rl">Story</span></strong>
+    </div>
+</a>
+
+<div class="container content">
+    <div class="row aboutusmaindiv">
+        <div class="col-sm-12" style="display: none;">
+            <h3 class="hero-header-3">Welcome to Tumio</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            <img src="~/Content/Images/logo-with-social.png" width="93%;" />
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            <p class="drop-cap tumiofont" style="margin-top:4vw;">
+                Our  <span style="color:green;"><b>AI</b></span> powered social empowerment application is being designed to support people in excelling their business and employment opportunity, publishing their hyperlocal news and events.
+            </p>
+
+            <p class="tumiofont">
+                Our focus is to integrate people from first to last miles within the digital exploration. We are trying to provide flexibility to people to use our app with or without GPS on their mobile devices.
+            </p>
+            <p class="tumiofont">
+                The opportunity to attain outsized reach and scale is mind-boggling. It so is the potential to create a genuinely democratic social platform powered by ordinary citizens in the most remote stretches of our society.
+            </p>
+            <p class="tumiofont">
+                Soon we will start beta and would look forward to your participation.
+            </p>
+            <p class="tumiofont">
+                Please contact us at <a href="mailto:trikaltechno@gmail.com">trikaltechno@gmail.com</a> for more information about the application.
+            </p>
+        </div>
+    </div>
+    
+
+
+</div>
+<script>
+    $(document).ready(function () {
+        $('#sp-tumio').css('color', 'cadetblue');
+    });
+</script>

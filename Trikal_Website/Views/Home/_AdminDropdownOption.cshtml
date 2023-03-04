@@ -1,0 +1,12 @@
+﻿<div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        @*Welcome @Convert.ToString(Session["Username"])*@
+        Welcome <span>@ViewBag.Name</span>
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="@Url.Action("BrochureRequestReceived","BrochureRequest")">Request <span class="badge notification-badge" style="display:none;"></span></a>
+        <a class="dropdown-item" href="@Url.Action("BrochureRequestProcessed","BrochureRequest")">View History</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="@Url.Action("Logout","Home")">Logout</a>
+    </div>
+</div>

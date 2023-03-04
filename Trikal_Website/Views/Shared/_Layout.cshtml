@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Our technology startup was incorporated with a belief that in this world of accelerating change, opportunity lies in integrating the rural communities, small businesses and underserved segments with the urban and better served segments through the application of technologies.">
+    <meta name="keywords" content="Trikal,Tumio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trikal Technology Solutions Pvt Ltd</title>
+    @*<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+        <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <script src="~/Scripts/modernizr-2.6.2.js"></script>*@
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    @*<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>*@
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    @*<script src="~/Content/Site/js/Layout.js"></script>*@
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link href="~/Content/css/custom.css" rel="stylesheet" />
+
+    <style>
+
+
+        .content {
+            margin-top: 30px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #FFFFFF;
+        }
+
+            .sticky + .content {
+                padding-top: 102px;
+            }
+
+        div.mailpopup {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            max-width: 290px;
+            left: 11%;
+           
+        }
+
+        @@media screen and (max-width: 600px) {
+            div.mailpopup {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                max-width: 290px;
+                left: 0%;
+                /*border: 3px solid #73AD21;*/
+            }
+        }
+
+        div.mailpopup {
+            position: fixed;
+            bottom: 0;
+            /*width: 310px;*/
+            max-width: 310px;
+            /*border: 3px solid #73AD21;*/
+        }
+    </style>
+
+</head>
+<body class="background-white">
+    <div class="navbar navbar-expand-lg navbar-light light-blue lighten-4 navbar-fixed-top sticky">
+        <a class="navbar-brand navbar-item-color" href="@Url.Action("Index","Home")">
+            <img src="@Url.Content("~/Content/Images/logo tetech final alt2.png")" height="48" alt="Trikal Technology" style="margin-left: 24px;width: 86px;" />
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav" style="margin-left:20px;">
+
+            <!-- Links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link navbar-item-color nav-text" href="@Url.Action("Index","Home")">
+                        <span id="sp-home" style="font-size:larger;font-weight:bold;">Home</span>  
+                        
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-item-color" href="@Url.Action("Tumio","Home")">
+                        <span id="sp-tumio" style="font-size:larger;font-weight:bold;">Tumio</span>  
+                        @*<i class="right"></i>*@
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-item-color" href="@Url.Action("TCDV","Home")">
+                        <span id="sp-tcdv" style="font-size:larger;font-weight:bold;">TCDV</span>  
+                        @*<i class="right"></i>*@
+                    </a>
+                </li>
+
+              
+
+            </ul>
+            <!-- Links
+
+    -->
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item" style="display:inline-flex;">
+                    <a  href="https://www.linkedin.com/company/trikal-technology-solutions-private-limited/" target="_blank" class="nav-link waves-effect waves-light" style="margin-right:-2px;">
+                        <i class="fa fa-linkedin navbar-item-color i-margin-nav" aria-hidden="true" style="color:#0e76a8 !important;">
+
+                        </i>
+                    </a>
+                    <a class="nav-link waves-effect waves-light">
+                        @*<i class="fa fa-linkedin navbar-item-color i-margin-nav" aria-hidden="true" style="color:#0e76a8 !important;">
+
+                        </i>*@
+                        <i class="fa fa-facebook-f navbar-item-color i-margin-nav" aria-hidden="true" style="color:grey !important;">
+                            @*color:#3b5998*@
+                        </i>
+                        <i class="fa fa-twitter navbar-item-color i-margin-nav" aria-hidden="true" style="color:grey !important;">
+                            @*color:#00acee*@
+
+                        </i>
+
+                        <i class="fa fa-reddit-alien navbar-item-color i-margin-nav" aria-hidden="true" style="color:grey !important;">
+                            @*color:#FF4301*@
+                        </i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" id="login" style="cursor:pointer;">
+                        <i class="fa fa-sign-in navbar-item-color" aria-hidden="true" style="color:forestgreen !important;">
+
+                        </i>
+                        <span class="login-text navbar-item-color">Login</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+        <!-- Collapsible content -->
+
+        <!--/.Navbar-->
+        @*<div class="container-fluid" style="height:45px;">
+            <div class="navbar-header" style="width:100%;text-align:center;">
+
+
+
+                <a id="HomeIcon" style="float:left; position:relative;left:20px;top:10px;display:none;" href="@Url.Action("Index","Home")"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
+                <a href="@Url.Action("Index","Home")"><img src="@Url.Content("~/Content/Images/logo tetech final alt.png")" style="width:89px;position:relative;top:-3px;" /></a>
+
+
+                <div style="position:relative;float:right;top:10px;" id="UserInfoDiv">
+                    @if (Session["Admin"] == null)
+                    {
+                        <a href="javascript:void(0)" id="login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+                    }
+                    else
+                    {
+                        { Html.RenderAction("GetAdminDropdownOption", "Home"); }
+                    }
+                </div>
+
+
+
+            </div>
+
+        </div>*@
+
+    </div>
+
+
+
+    <div id="mySidenav" class="sidenav card">
+        <a href="javascript:void(0)" class="closebtn">&times;</a>
+        <a href="javascript:void(0)">Login</a>
+        <div style="padding:30px;">
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </span>
+                <input id="emailphone" type="text" class="form-control" name="emailorphone" placeholder="Enter email or phone">
+
+            </div>
+            <label id="emailphonevalidationmessage" class="validationMessage"></label>
+            <br>
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </span>
+                <input id="password" type="password" class="form-control" name="password" placeholder="Enter password">
+
+            </div>
+            <label id="passwordvalidationmessage" class="validationMessage"></label>
+            <br />
+
+            <button class="button_login" id="signuplogin">Login</button>
+
+
+            <div class="lds-ring" style="display:none;"><div></div><div></div><div></div><div></div></div>
+            <br />
+            <label id="messageresponse" class="validationMessage" style="display:none;"></label>
+        </div>
+
+    </div>
+
+    <div id="snackbar"></div>
+
+    <div class="body-content content">
+        @RenderBody()
+    </div>
+
+    <div style="margin-bottom:-40px; display:none;" id="BrochureFooter">
+        <footer class="container">
+            <div style="padding:16px 16px;">
+                <div class="row">
+                    <div class="col-sm-0 col-xs-0">
+                     </div>
+                    <div class="col-sm-4 col-xs-12 footercard">
+                            @if (Session["Admin"] == null)
+                            {
+                                <input type="hidden" id="AdminPresent" value="0" />
+                                <div>
+                                    <div class="row" style="margin-top:10px;margin-bottom:15px;text-align:center;">
+
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <span>Email me the TUMIO BROCHURE</span><i class="fa fa-angle-up" style="font-size:20px;color:red;float:right;cursor:pointer;" arrowpos="1" id="arrowupdown"></i>
+                                        </div>
+
+                                       
+
+                                    </div>
+                                    <div class="row" id="SendBrochureForm" style="display:none;margin-top:10px;margin-right:20px;margin-left:26px;">
+                                        <p>Every guest who registers with us gets a copy of our Tumio brochure to know more about our application.</p>
+
+                                        <br />
+                                        <div>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                                </span>
+                                                <input id="name" type="text" class="form-control" name="name" placeholder="Name">
+
+                                            </div>
+                                            <label id="namevalidationmessage" class="validationMessage"></label>
+                                            <br>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                                </span>
+                                                <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+
+                                            </div>
+                                            <label id="emailvalidationmessage" class="validationMessage"></label>
+                                            <br />
+                                            <button class="btn-success" id="SendBrochure">Send Brochure</button>
+                                            <div class="lds-ring" id="BrochureRequestLoader" style="display:none;"><div></div><div></div><div></div><div></div></div>
+
+                                            <label id="requestsendmessage" style="display:none;margin-bottom:3px;"></label>
+                                            <div style="margin:10px;height:10px;">
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <input type="hidden" id="AdminPresent" value="1" />
+                            }
+
+
+
+                        </div>
+                    
+                </div>
+            </div>
+
+
+        </footer>
+    </div>
+
+
+
+
+    <div class="selector-card-label footer" id="footer">
+        <footer class="container">
+            <div style="padding:16px 16px;">
+                <div class="row">
+                    
+                    <div class="col-sm-8 col-xs-12">
+                        <a href="@Url.Action("Disclaimer","Legal")" class="footer-text login-text" id="DisclaimerLink">Disclaimer</a>
+                        <a href="@Url.Action("PrivacyPolicy","Legal")" class="footer-text login-text" id="PrivacyPolicyLink">Privacy Policy</a>
+                       
+                    </div>
+                    
+                    <div class="col-sm-4 col-xs-12">
+                        
+                        <p class="login-text">&copy; Trikal Technology Solutions Pvt Ltd</p>
+                        <p class="bottom-nav-address">
+                            Corporate office: Room no. 3L, 3rd Floor, White Tower, 115, College Street, Kolkata-700012
+                        </p>
+                        <p class="bottom-nav-address" style="text-transform:lowercase;">Email : trikaltechno@gmail.com</p>
+                        <p class="bottom-nav-address">Phone no: +91 9836358499</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </footer>
+    </div>
+
+    <div class="modal fade" id="id01" role="dialog">
+        <div class="modal-dialog modal-lg adminloginmodal" id="id01" style="max-width:530px;">
+
+            <div class="modal-content animate">
+                <div class="imgcontainer">
+                    <span class="close" title="Close Modal">&times;</span>
+                    <h1><strong><label style="color:grey;">Admin Login</label></strong></h1>
+                </div>
+
+                <div class="container adminlogin" style="padding:30px;">
+                    <label for="uname" style="color:grey;"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw" style="color:grey;"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <div style="height:20px;">
+
+                    </div>
+                    <button type="submit" style="background-color:gray;">Login</button>
+
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>

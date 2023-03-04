@@ -1,0 +1,262 @@
+﻿
+@{
+    ViewBag.Title = "HomePage";
+}
+
+<script src="@Url.Content("~/Content/Site/js/Index.js?v="+DateTime.Now.Ticks.ToString())" type="text/javascript"></script>
+<style>
+     :root {
+    --hero-header_default_height: 100vh;
+  }
+    .hero-header {
+        height:var(--hero-header_default_height);
+        min-height:var(--hero-header_default_height); /*600px;*/
+    }
+
+    .bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: opacity 5s;
+        -moz-transition: opacity 5s;
+        transition: opacity 5s;
+    }
+
+    .hidden {
+        opacity: 0;
+    }
+    .hero-header-1 {
+        color: antiquewhite;
+        font-size: 32px;
+        font-weight: 300;
+    }
+
+    @@media screen and (min-width: 799px) {
+        .hero-header-1 {
+        color: antiquewhite;
+        font-size: 50px;
+        font-weight: 300;
+        }
+    }
+
+    @@media screen and (min-width: 1084px) {
+        .hero-header-1 {
+            color: antiquewhite;
+            font-size: 70px;
+            font-weight: 300;
+        }
+    }
+
+    
+
+
+
+    .hero-header-2 {
+        color: antiquewhite;
+        font-size: 23px;
+        font-weight: 200;
+    }
+
+    .bounce {
+        -moz-animation: bounce 2s infinite;
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite;
+    }
+
+    @@keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-30px);
+      }
+      60% {
+        transform: translateY(-15px);
+      }
+    }
+
+    .text-wrap {
+        float: right;
+        margin: 10px;
+    }
+
+    .hero-header-3 {
+        font-size: 37px;
+        font-weight: 350;
+        color: cadetblue;
+    }
+
+    .startupindia {
+        width: 148px;
+        margin-left: 20px;
+        margin-top: -34px;
+    }
+    .hope{
+	position: absolute;
+    bottom: 10vh;
+    text-align: center;
+    /* top: 44px; */
+    width: 100%;
+    
+}
+
+.bgalways {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 5s;
+  -moz-transition: opacity 5s;
+  transition: opacity 5s;
+}
+.float-img{
+    width:100vw;
+    border-radius: 120px;
+    margin-right: -4vw;
+    /*margin-left: 10px;*/
+}
+
+    @@media (min-width: 768px) and (max-width: 991px) {
+        .float-img {
+            /*width: 100vw;
+            margin-right: -4vw;*/
+             width: 34vw;
+            margin-right: 0px;
+            margin-left: 20px;
+            
+        }
+    }
+
+    @@media (min-width: 992px) and (max-width: 1199px) {
+        .float-img {
+            width: 34vw;
+            margin-right: 0px;
+            margin-left: 20px;
+        }
+    }
+
+    @@media (min-width: 1200px) {
+        .float-img {
+            width: 32vw;
+            margin-right: 0px;
+            margin-left: 20px;
+        }
+    }
+</style>
+<script>
+function newGradient() {
+    var c1 = {
+        r: Math.floor(Math.random()*100),
+        g: Math.floor(Math.random()*255),
+        b: Math.floor(Math.random()*255)
+    };
+    var c2 = {
+        r: Math.floor(Math.random()*255),
+        g: Math.floor(Math.random()*100),
+        b: Math.floor(Math.random()*255)
+    };
+    c1.rgb = 'rgb('+c1.r+','+c1.g+','+c1.b+')';
+    c2.rgb = 'rgb('+c2.r+','+c2.g+','+c2.b+')';
+    return 'radial-gradient(at top left, '+c1.rgb+', '+c2.rgb+')';
+}
+
+function rollBg() {
+    $('.bg.hidden').css('background', newGradient());
+    $('.bg').toggleClass('hidden');
+}
+
+$(document).ready(function() {
+  rollBg();
+    setInterval(rollBg, 5000);
+
+    $('body').on('click', '#sectionpointer', function () {
+         if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $('#section').offset().top-100
+      }, 1000, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+      //  window.location.hash = hash;
+      });
+    } // End if
+
+    });
+});
+</script>
+<div style="right: 0px; left: 0px; ">
+    <div class="hero-header" >
+        <div class="bg"></div>
+        <div class="bg hidden">
+            
+        </div>
+        <div class="bgalways">
+            <div style="position:absolute;top:20vh;text-align:center;margin:5px;">
+                <h1 class="hero-header-1">Welcome and be a partner of our social empowerment platform</h1>
+                <div style="margin-top:15vh;">
+                    <h3 class="hero-header-2">
+                        Crafted with care, technology and passion.
+                    </h3>
+                </div>
+
+
+            </div>
+            <div class="bounce hope">
+
+                <i class="fa fa-chevron-down fa-2x" style="color: #f0ffff4a;cursor:pointer;" id="sectionpointer"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top:90px;" id="section">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 class="hero-header-3"style="text-align:center;" >Our initials</h3>
+            </div>
+        </div>
+        <div class="row" style="margin-top:35px;margin-bottom:40px;">
+            <div class="col-sm-12" style="text-align:justify;">
+                @*<img src="~/Content/Images/background-image-tumio1.jpg" class="text-wrap" style="width:300px;border-radius:120px;" />*@
+                @*<img src="~/Content/Images/webpagttech_ROUND.jpg" class="text-wrap" style="width:340px;border-radius:120px;" />*@
+                <img src="~/Content/Images/webpage ttech __conn.jpg" class="text-wrap float-img" />
+                <p>
+                    Our technology startup was incorporated with the belief that in this world of accelerating change, the opportunity lies in integrating the common people from first to last miles with the digital revolution. With telecom goliaths pledging the cheap data and voice plans to carry over networks that are continuously penetrating remotest areas, the future of this world depends on how best we can connect and synchronize the supplies and demands, producers and consumers and emerging with emerged.
+                </p>
+                <p>
+                    We expect that our disruptive applications driven by <b>AI</b> and <b>Machine Learning</b> would help people to reimagine digital connectedness for business, employment, and social interaction. It will empower them to grow into their dreams of socio-economic success and will also enable people to connect and make friends globally to exchange usable knowledge, informative content and creative thoughts.
+                </p>
+                <p>
+                    “<b>TUMIO</b>”(meaning “You too”), an android and web-based application, is our first initiative The AI-powered platform will facilitate social empowerment and help people contribute and create news scoops and informative video content while reducing bias and misinformation from being spread worldwide.
+                </p>
+                <p>
+                    Besides Tumio, we are also working on projects to ease the operational processes and overcome techno-commercial obstacles by adopting advanced tech and integration of customized applications. Our ongoing project named TCDV is one such application to ensure smart urban management and sustainable rural development.
+                </p>
+                <p>
+                    By combining our strategic thinking, multidisciplinary perspectives, and technical expertise, we create coherent and sustainable solutions for our partners, customers and society.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 class="hero-header-3">Certificate of Recognition</h3>
+            </div>
+            <div class="row" style="margin-top:35px;margin-bottom:40px;">
+                <div class="col-sm-12">
+                    <a href="https://www.startupindia.gov.in/content/sih/en/startupgov/validate-startup-recognition.html" target="_blank" style="text-decoration:none;">
+                        <img src="~/Content/Images/startupindia.png" class="startupindia" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#sp-home').css('color', 'cadetblue');
+    });
+</script>

@@ -1,0 +1,36 @@
+﻿@model List<Trikal_Website.Models.ViewModels.BrochureRequestDetailsViewModel>
+
+
+<table id="BrochureRequestDetailsProcessed" class="illusionztable1">
+    <thead>
+        <tr>
+            <th>Request Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Last Updated On</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var m in Model)
+        {
+            <tr>
+                <td>@m.BrochureRequestId</td>
+                <td>@m.Name</td>
+                <td>@m.Email</td>
+                <td>@m.LastUpdateDate</td>
+                <td style="text-align:center;">
+                    @if (m.MarkAsSpam == true && m.SendBit == false)
+                    {
+                       <i class="fa fa-ban admin-action" aria-hidden="true" style="color:red;"></i>
+                    }
+                    else if (m.MarkAsSpam == false && m.SendBit == true)
+                    {
+                        <i class="fa fa-paper-plane admin-action" aria-hidden="true" style="color:forestgreen;"></i>
+                    }
+                    
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

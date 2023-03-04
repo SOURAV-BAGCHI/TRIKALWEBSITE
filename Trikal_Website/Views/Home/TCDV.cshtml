@@ -1,0 +1,105 @@
+﻿
+@{
+    ViewBag.Title = "TCDV";
+}
+    <script src="@Url.Content("~/Content/Site/js/Index.js?v="+DateTime.Now.Ticks.ToString())" type="text/javascript"></script>
+<style>
+    .hero-header-3 {
+        font-size: 37px;
+        font-weight: 350;
+        color: cadetblue;
+    }
+    .text-wrap {
+        float: right;
+        margin: 10px;
+    }
+    .hero-header-4 {
+        position: relative;
+        top: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        color: #17611dcc;
+        z-index: 9;
+    }
+    .float-img2{
+    width:100vw;
+    margin-right: -4vw;
+    border-radius:50px;
+    position:relative;
+    bottom:50px;
+    /*margin-left: 10px;*/
+}
+
+    @@media (min-width: 768px) and (max-width: 991px) {
+        .float-img2 {
+            /*width: 100vw;
+            margin-right: -4vw;*/
+            width: 34vw;
+            margin-right: 0px;
+            margin-left: 20px;
+        }
+    }
+
+    @@media (min-width: 992px) and (max-width: 1199px) {
+        .float-img2 {
+            width: 34vw;
+            margin-right: 0px;
+            margin-left: 20px;
+        }
+    }
+
+    @@media (min-width: 1200px) {
+        .float-img2 {
+            width: 32vw;
+            margin-right: 0px;
+            margin-left: 20px;
+        }
+    }
+
+    .tumiofont {
+        font-size: 1.2em;
+    }
+</style>
+
+
+<div class="container content">
+    <div class="row aboutusmaindiv">
+        <div class="col-sm-12">
+            <h3 class="hero-header-3" style="color:#0e5e61;margin-top: 15px;">Smart Urban Management & Sustainable Rural Development</h3>
+        </div>
+    </div>
+    <div class="row" style="margin-top:35px;margin-bottom:40px;">
+
+
+
+        <div class="col-sm-12" style="text-align:justify;">
+          
+            <div class="text-wrap">
+
+                <img src="~/Content/Images/TCDV.jpg" class="float-img2" />
+                @*style="width:340px;border-radius:50px;position:relative;bottom:50px;margin-left:25px;"*@
+            </div>
+            
+            <p class="tumiofont">
+                Clean cities and prospering villages are the essential dreams of our society.
+            </p>
+            <p class="tumiofont">
+                Towards fulfilling those dreams, we are developing an application named "TCDV" around our novelty and innovation to consolidate urban municipal management and the rural agro-economic operation, synchronizing real-time locality specific feedbacks and appropriate smart actions.
+            </p>
+            <p class="tumiofont">
+                Through the application, the entire process will facilitate the authorities to initiate appropriate action in response to its citizens' or villagers' needs and thereby ensure good governance, responsiveness, and transparency about its functioning.
+            </p>
+            <p class="tumiofont">
+                The performance, movement, and action of any resource (vehicle, human resources, machinery, etc.) can be managed by analyzing real-time data obtained from those resources.
+            </p>
+            @*<p>
+                The uniqueness of the application is its GPS independence on the user side, its flexibility for the consistent addition of new features as per the need of users, and it will be continuously improved through the adoption of advanced technologies like IoT, AI, etc. into it over time.
+            </p>*@
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#sp-tcdv').css('color','cadetblue');
+    });
+</script>
