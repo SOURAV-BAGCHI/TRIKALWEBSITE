@@ -148,6 +148,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\BrochureRequestController.cs" />
+    <Compile Include="Controllers\icitieskmcswmController.cs" />
     <Compile Include="Controllers\LegalController.cs" />
     <Compile Include="Controllers\MediaCornerController.cs" />
     <Compile Include="DATALibrary\CommonApiMethod.cs" />
@@ -191,6 +192,7 @@
     <Content Include="Views\MediaCorner\_FeedbackCard.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\TCDV.cshtml" />
+    <Content Include="Views\icitieskmcswm\PrivacyPolicy.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
